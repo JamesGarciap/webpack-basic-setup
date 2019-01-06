@@ -12,10 +12,22 @@ module.exports = {
   },
   module: {
     rules: [
-      // CSS-loader
+      // CSS-loader: https://github.com/webpack-contrib/css-loader
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      // Babel-loader: https://github.com/babel/babel-loader
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-transform-runtime']
+          }
+        }
       }
     ]
   },
