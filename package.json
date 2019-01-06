@@ -1,0 +1,19 @@
+{
+  "name": "webpack_4",
+  "version": "1.0.0",
+  "description": "Testing webpack 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js --output bundle.js --mode none"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "@JamesGarciap",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  }
+}
