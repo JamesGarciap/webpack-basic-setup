@@ -1,11 +1,11 @@
 {
-  "name": "webpack_4",
+  "name": "webpack_getting_started",
   "version": "1.0.0",
-  "description": "Testing webpack 4",
+  "description": "Getting started with Webpack by practicing previous courses",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack index.js --output bundle.js --mode none"
+    "build": "webpack --mode none"
   },
   "keywords": [
     "webpack"
